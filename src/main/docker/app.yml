@@ -1,0 +1,21 @@
+version: '2'
+services:
+    csc510project-app:
+        image: csc510project
+        external_links:
+            - csc510project-postgresql:postgresql
+            - csc510project-elasticsearch:elasticsearch
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/CSC510Project
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=elasticsearch:9300
+        ports:
+            - 8080:8080
+    csc510project-postgresql:
+        extends:
+            file: postgresql.yml
+            service: csc510project-postgresql
+    csc510project-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: csc510project-elasticsearch
