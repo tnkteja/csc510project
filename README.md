@@ -17,6 +17,12 @@ After installing Node, you should be able to run the following command to instal
 We use [Gulp][] as our build system. Install the Gulp command-line tool globally with:
 
     npm install -g gulp
+    
+Steps to configure database server.  ** Neela
+1) install Postgresql for development platform. install PGAdminIII ( optional)
+2) Create a role called "csc510project" with password "csc510project".
+3) make him super user and grant him all permissions.
+4) Create a database named "csc510project", make "csc510project" user created earlier as the owner.
 
 Run the following commands in two separate terminals to create a blissful development experience where your browser
 auto-refreshes when files change on your hard drive.
