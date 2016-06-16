@@ -18,10 +18,10 @@ spring:
         livereload:
             enabled: false # we use gulp + BrowserSync for livereload
     datasource:
-        url: jdbc:postgresql://localhost:5432/CSC510Project
+        url: jdbc:postgresql://localhost:5432/csc510project
         name:
-        username: CSC510Project
-        password:
+        username: csc510project
+        password: csc510project
     jpa:
         database-platform: com.ntadiko.myapp.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
