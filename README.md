@@ -1,5 +1,7 @@
 # CSC510Project
 
+Refer project [wiki](https://github.com/tnkteja/csc510project/wiki) for course work on the project and report.
+
 This application was generated using JHipster, you can find documentation and help at [https://jhipster.github.io](https://jhipster.github.io).
 
 ## Development
